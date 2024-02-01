@@ -22,9 +22,12 @@ public abstract class Felino extends Animal {
      *
      */
    @Override
-    public String comer() {
+    public final String comer() {
         return "El felino come y se lame las patas";
     }
 
-
+    @Override
+    public String sonido(){
+        return "grrrrr";
+    }
 }
