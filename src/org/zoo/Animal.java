@@ -6,10 +6,29 @@ public class Animal {
     private String nombreCientifico;
     private double edad;
 
+    public Animal(){
+        this("Animal Común", "n/a", 1000);
+    }
+
     public Animal(String nombreComun, String nombreCientifico, double edad) {
+        this(2158.0);
         this.nombreComun = nombreComun;
         this.nombreCientifico = nombreCientifico;
         this.edad = edad;
+
+    }
+
+    private Animal(int numSerie){
+        // TODO agregar el numSerie al animal, ya sea de una DB o usando un atributo estático
+        // código que solo será accesible por la misma clase
+    }
+
+    private Animal(double serie){
+        this( (int)serie  );
+    }
+
+    public Animal createAnimalGeneric(){
+        return new Animal();
     }
 
     public String getNombreComun() {
