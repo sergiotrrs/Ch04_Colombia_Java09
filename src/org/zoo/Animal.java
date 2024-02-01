@@ -124,7 +124,7 @@ public abstract class Animal {
      *  de hacer tu clase abstracta.
      */    public abstract String sonido();
     public abstract String sonido(int nivelSonido);
-    public abstract String sonido(doble frecuencia);
+    public abstract String sonido(double frecuencia);
 
 
 } // Cierre de la clase
