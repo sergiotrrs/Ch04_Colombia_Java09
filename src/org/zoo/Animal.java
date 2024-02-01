@@ -43,9 +43,9 @@ public abstract class Animal {
         this( (int)serie  );
     }
 
-    public Animal createAnimalGeneric(){
-        return new Animal();
-    }
+//    public Animal createAnimalGeneric(){
+//        return new Animal();
+//    }
 
     public String getNombreComun() {
         return nombreComun;
